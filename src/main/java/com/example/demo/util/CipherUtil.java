@@ -23,7 +23,7 @@ import java.util.Base64;
 @Component
 public class CipherUtil {
 
-    private static final String secretKey = "MIICWwIBAAKBgG6rCMvgMzEhniPlXIqbi++E5BVyb4p65oXcgsJhx3tJNDOrdKxz";
+    private static final String secretKey = "";
 
     private SecretKeySpec secretKeySpec;
 

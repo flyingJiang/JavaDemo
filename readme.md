@@ -1,6 +1,13 @@
 # Getting Started
 该项目主要用于个人测试
 其中一些方法经过个人提炼，能够从一定程度上提升编程效率
+主要内容如下
+- 项目之初，原计划是写一个elasticsearch的demo的
+- 后来又引入了jpa连接数据库
+- 后来又引入了redis
+- 又尝试了画UML图
+- 日常测试
+- 写程序的心得与总结
 
 ## Elasticsearch
 
