@@ -91,3 +91,8 @@ nothing to commit, working tree clean
 [url "git@github.com:"]
     insteadOf = https://github.com
 ```
+使用的命令合集
+```shell script
+localhost:~ jiangjianfei$ vim .gitconfig
+localhost:~ jiangjianfei$ source .gitconfig
+```
