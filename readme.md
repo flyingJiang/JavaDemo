@@ -60,3 +60,34 @@ fatal: Authentication failed for 'https://github.com/flyingJiang/JavaDemo.git/'
 
 git remote set-url origin https://[Personal access tokens]@github.com/flyingJiang/JavaDemo.git
 ```
+### 又遇到一个提交代码的问题
+
+```shell script
+
+localhost:demoes jiangjianfei$ git push
+fatal: unable to access 'https://github.com/flyingJiang/JavaDemo.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+localhost:demoes jiangjianfei$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+```
+网上搜素的[解决方案](https://www.jianshu.com/p/8ff150623888)
+解决后.gitconfig文件中的内容如下:
+```shell script
+[core]
+    excludesfile = /Users/jiwenzhang/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[user]
+    name = “zhangjiwen”
+    email = “1129802827@qq.com”
+[url "git@github.com:"]
+    insteadOf = https://github.com
+```
