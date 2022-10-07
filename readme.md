@@ -96,3 +96,15 @@ nothing to commit, working tree clean
 localhost:~ jiangjianfei$ vim .gitconfig
 localhost:~ jiangjianfei$ source .gitconfig
 ```
+
+
+问题又出现了
+```shell script
+localhost:demoes jiangjianfei$ git push
+fatal: unable to access 'https://github.com/flyingJiang/JavaDemo.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+```
+这个问题的解决方案应该是解决访问权限
+```shell script
+git remote set-url origin https://[Personal access tokens]@github.com/flyingJiang/JavaDemo.git
+```
+然后push即可
