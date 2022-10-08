@@ -43,6 +43,8 @@ redis-server /usr/local/etc/redis.conf
 [SpringBoot 中使用Redis缓存](https://xcbeyond.blog.csdn.net/article/details/81116600?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-81116600-blog-121883374.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-81116600-blog-121883374.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=5)
 
 ## 单元测试着重方法的使用，提炼
+### 单元测试遇到的那些坑
+[IDEA 单元测试报错：Class not found](https://blog.csdn.net/amo_te_ama_me/article/details/87968357)
 
 ## github 提交代码的变化
 ```shell script
