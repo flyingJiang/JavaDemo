@@ -1,0 +1,43 @@
+--
+1.	丰富的敏捷项目开发经验和带领中小型敏捷团队的经验，并不断为团队敏捷工作作出贡献；
+2.	熟悉领域设计、风险控制、采购业务，能够为业务快速、稳定发展提供支持；
+3.	英语沟通良好，乐于与用户、同事和领导沟通，能够快速定位并解决项目遇到的问题。
+
+
+
+1.	采购平台
+2.	信控平台
+
+红黑树
+二分
+动态
+跳表
+
+高并发
+
+项目总结
+
+25、 jdk中的设计模式：
+1. 单例例模式：
+java.lang.Runtime#getRuntime()
+java.awt.Desktop#getDesktop()
+java.lang.System#getSecurityManager()
+2. 责任链模式：
+java.util.logging.Logger#log()
+javax.servlet.Filter#doFilter()
+3. 观察者模式：
+java.util.Observer/ java.util.Observable（很少在现实世界中使⽤用）
+所有实现java.util.EventListener（因此实际上各地的Swing）
+javax.servlet.http.HttpSessionBindingListener
+javax.servlet.http.HttpSessionAttributeListener
+javax.faces.event.PhaseListener
+26、 spring中的设计模式：
+a. 简单⼯工⼚厂： spring中的BeanFactory就是简单⼯工⼚厂模式的体现，根据传⼊入⼀一个唯⼀一的标识来获得bean对象，但是否是在传⼊入
+参数后创建还是传⼊入参数前创建这个要根据具体情况来定。
+b. 单例例模式： Spring下默认的bean均为singleton。
+c. 代理理模式：为其他对象提供⼀一种代理理以控制对这个对象的访问。 从结构上来看和Decorator模式类似，但Proxy是控制，更更像
+是⼀一种对功能的限制，⽽而Decorator是增加职责。 spring的Proxy模式在aop中有体现，⽐比如JdkDynamicAopProxy和
+Cglib2AopProxy。
+d. 观察者模式：定义对象间的⼀一种⼀一对多的依赖关系，当⼀一个对象的状态发⽣生改变时，所有依赖于它的对象都得到通知并被⾃自
+动更更新。 spring中Observer模式常⽤用的地⽅方是listener的实现。如ApplicationListener。
+27、

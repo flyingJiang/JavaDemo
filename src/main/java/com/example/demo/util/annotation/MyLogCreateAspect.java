@@ -58,6 +58,10 @@ public class MyLogCreateAspect {
     @Around("myLogCreateAspect()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         try {
+
+            Object[] args = pjp.getArgs();
+            log.info("doAround:{}", JSONUtil.toJsonStr(args));
+
             RequestAttributes ra = RequestContextHolder.getRequestAttributes();
             ServletRequestAttributes sra = (ServletRequestAttributes) ra;
             HttpServletRequest request = sra.getRequest();
