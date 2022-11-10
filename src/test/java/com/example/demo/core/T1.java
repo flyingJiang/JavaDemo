@@ -100,9 +100,11 @@ public class T1 {
     public void testQueue() {
         // 先进先出 队列
         Queue<String> queue = new LinkedList<>();
-        queue.add("1");
-        queue.add("2");
+//        queue.add("1");
+//        queue.add("2");
         // 用这三个
+        queue.offer("31");
+        queue.offer("32");
         queue.peek();
         queue.poll();
         queue.offer("3");
@@ -122,6 +124,7 @@ public class T1 {
         // 栈顶
         int a1 = stack.peekFirst();
         System.out.println("peekFirst, " + a1);
+        stack.peek();
 
         // 栈底
         int a2 = stack.peekLast();
