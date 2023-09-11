@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static java.lang.Thread.currentThread;
 
 /**
@@ -28,6 +31,7 @@ import static java.lang.Thread.currentThread;
 public class MyAspectController {
     @Autowired
     private MyAspectService myAspectService;
+
     @MyLogCreate
     @PostMapping("/test")
     public Object test(HttpServletRequest request, @RequestBody User user) {
@@ -35,7 +39,19 @@ public class MyAspectController {
         log.info("http://localhost:8080/myAspectController/test, sourceKey = {}, user = {}",
                 sourceKey, JSONUtil.toJsonStr(user));
         log.info("test===currentThread().getId() = {},currentThread().getName() = {}",
-                currentThread().getId(),currentThread().getName());
-        return "http://localhost:8080/myAspectController/test"+myAspectService.get();
+                currentThread().getId(), currentThread().getName());
+        return "http://localhost:8080/myAspectController/test" + myAspectService.get();
+    }
+
+// http://localhost:8080/myAspectController/test_date
+    @PostMapping("/test_date")
+    public Object test_date(HttpServletRequest request, @RequestBody User user) {
+        log.info(JSONUtil.toJsonStr(user));
+        return user;
+    }
+
+    public static void main(String[] args) {
+        List<User> list = new ArrayList<>();
+        list.stream().filter(u->u.getPassword()!=null).forEach(u->System.out.println(u));
     }
 }

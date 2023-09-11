@@ -96,8 +96,9 @@ public class T20kthGrammar {
         }
         return res;
     }
+
     @Test
-    public void t1(){
+    public void t1() {
         kthGrammar(30,
                 434991989);
     }

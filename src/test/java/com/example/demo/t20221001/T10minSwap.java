@@ -65,7 +65,7 @@ public class T10minSwap {
             if (nums1[i] > nums1[i - 1] && nums2[i] > nums2[i - 1]) {
                 continue;
             } else {
-                if (nums1[i]>nums2[i-1]&&nums2[i]>nums1[i-1]) {
+                if (nums1[i] > nums2[i - 1] && nums2[i] > nums1[i - 1]) {
                     ansLeft++;
                     int temp = nums1[i];
                     nums1[i] = nums2[i];
@@ -78,7 +78,7 @@ public class T10minSwap {
             if (nums1c[i] < nums1c[i + 1] && nums2c[i] < nums2c[i + 1]) {
                 continue;
             } else {
-                if (nums1c[i]>nums2c[i-1]&&nums2c[i]>nums1c[i-1]) {
+                if (nums1c[i] > nums2c[i - 1] && nums2c[i] > nums1c[i - 1]) {
                     ansRight++;
                     int temp = nums1c[i];
                     nums1c[i] = nums2c[i];
@@ -89,13 +89,14 @@ public class T10minSwap {
         return Math.min(Math.min(ansRight, ansLeft), ans);
 
     }
+
     public int minSwap2(int[] nums1, int[] nums2) {
         int n = nums1.length;
         int a = 0, b = 1;
         for (int i = 1; i < n; i++) {
             int at = a, bt = b;
             a = b = n;
-            if (nums1[i] > nums1[i - 1] && nums2[i] > nums2[i - 1])  {
+            if (nums1[i] > nums1[i - 1] && nums2[i] > nums2[i - 1]) {
                 a = Math.min(a, at);
                 b = Math.min(b, bt + 1);
             }

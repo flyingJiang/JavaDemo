@@ -7,8 +7,7 @@ import java.util.Queue;
 
 /**
  * @program: demoes
- * @description:　
- *     add 增加一个元索                     如果队列已满，则抛出一个IIIegaISlabEepeplian异常
+ * @description:　 add 增加一个元索                     如果队列已满，则抛出一个IIIegaISlabEepeplian异常
  * 　　remove   移除并返回队列头部的元素    如果队列为空，则抛出一个NoSuchElementException异常
  * 　　element  返回队列头部的元素             如果队列为空，则抛出一个NoSuchElementException异常
  * 　　offer       添加一个元素并返回true       如果队列已满，则返回false
@@ -16,11 +15,10 @@ import java.util.Queue;
  * 　　peek       返回队列头部的元素             如果队列为空，则返回null
  * 　　put         添加一个元素                      如果队列满，则阻塞
  * 　　take        移除并返回队列头部的元素     如果队列为空，则阻塞
- *        drainTo(list)   一次性取出队列所有元素
+ * drainTo(list)   一次性取出队列所有元素
  * ————————————————
  * 版权声明：本文为CSDN博主「java叶新东老师」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
  * 原文链接：https://blog.csdn.net/qq_27184497/article/details/116093422
- *
  * @author: jiangjianfei
  * @create: 2022-09-26 18:47
  **/

@@ -92,22 +92,23 @@ public class T5subdomainVisits {
 
         return ans;
     }
+
     /**
      * https://blog.csdn.net/qq_39736597/article/details/113762355
-     *
+     * <p>
      * Map集合通过entrySet()方法转换成的这个set集合，set集合中元素的类型是Map.Entry<K,V>
      * Map.Entry和String一样，都是一种类型的名字，只不过Map.entry是静态内部类，是Map中的
      */
     public static void main(String[] args) {
-        Map<Integer,String> maps=new HashMap<Integer,String>();
-        maps.put(3,"张飞");
-        maps.put(2,"关羽");
-        maps.put(4,"赵云");
-        maps.put(1,"刘备");
-        maps.put(5,"马超");
-        Set<Map.Entry<Integer,String>> sets=maps.entrySet();
-        for(Map.Entry<Integer,String> entry:sets){
-            System.out.println("key="+entry.getKey()+" value="+entry.getValue());
+        Map<Integer, String> maps = new HashMap<Integer, String>();
+        maps.put(3, "张飞");
+        maps.put(2, "关羽");
+        maps.put(4, "赵云");
+        maps.put(1, "刘备");
+        maps.put(5, "马超");
+        Set<Map.Entry<Integer, String>> sets = maps.entrySet();
+        for (Map.Entry<Integer, String> entry : sets) {
+            System.out.println("key=" + entry.getKey() + " value=" + entry.getValue());
         }
     }
 

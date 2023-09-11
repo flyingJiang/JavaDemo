@@ -90,31 +90,32 @@ public class T22mergeAlternately {
     /**
      * 方法一：双指针
      * 思路与算法
-     *
+     * <p>
      * 我们直接按照题目的要求模拟即可。我们使用两个指针 ii 和 jj，初始时分别指向两个字符串的首个位置。随后的每次循环中，依次进行如下的两步操作：
-     *
+     * <p>
      * 如果 ii 没有超出 \textit{word}_1word
      * 1
      * ​
-     *   的范围，就将 \textit{word}_1[i]word
+     * 的范围，就将 \textit{word}_1[i]word
      * 1
      * ​
-     *  [i] 加入答案，并且将 ii 移动一个位置；
-     *
+     * [i] 加入答案，并且将 ii 移动一个位置；
+     * <p>
      * 如果 jj 没有超出 \textit{word}_2word
      * 2
      * ​
-     *   的范围，就将 \textit{word}_2[j]word
+     * 的范围，就将 \textit{word}_2[j]word
      * 2
      * ​
-     *  [j] 加入答案，并且将 jj 移动一个位置。
-     *
+     * [j] 加入答案，并且将 jj 移动一个位置。
+     * <p>
      * 当 ii 和 jj 都超出对应的范围后，结束循环并返回答案即可。
-     *
+     * <p>
      * 作者：LeetCode-Solution
      * 链接：https://leetcode.cn/problems/merge-strings-alternately/solution/jiao-ti-he-bing-zi-fu-chuan-by-leetcode-ac4ih/
      * 来源：力扣（LeetCode）
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
      * @param word1
      * @param word2
      * @return

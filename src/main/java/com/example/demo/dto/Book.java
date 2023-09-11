@@ -10,12 +10,11 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 import java.util.Date;
 
 /**
+ * @author geng
+ * 2020/12/18
  * @Document定义在Elasticsearch中索引信息
  * @Id定义了Elasticsearch的_id
  * @Field定义字段类型等信息
- *
- * @author geng
- * 2020/12/18
  */
 @Data
 @Document(indexName = "book", createIndex = true)

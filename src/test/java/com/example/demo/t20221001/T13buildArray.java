@@ -81,9 +81,9 @@ public class T13buildArray {
     /**
      * 方法一：模拟
      * 思路
-     *
+     * <p>
      * 操作的对象是 11 到 nn 按顺序排列的数字，每次操作一个数字时，如果它在 \textit{target}target 中，则只需要将它 \texttt{Push}Push 入栈即可。如果不在 \textit{target}target 中，可以先将其 \texttt{Push}Push 入栈，紧接着 \texttt{Pop}Pop 出栈。因为 \textit{target}target 中数字是严格递增的，因此只要遍历 \textit{target}target，在 \textit{target}target 中每两个连续的数字 \textit{prev}prev 和 \textit{number}number 中插入 \textit{number} - \textit{prev} - 1number−prev−1 个 \texttt{Push}Push 和 \texttt{Pop}Pop，再多加一个 \texttt{Push}Push 来插入当前数字即可。
-     *
+     * <p>
      * 作者：LeetCode-Solution
      * 链接：https://leetcode.cn/problems/build-an-array-with-stack-operations/solution/yong-zhan-cao-zuo-gou-jian-shu-zu-by-lee-omde/
      * 来源：力扣（LeetCode）

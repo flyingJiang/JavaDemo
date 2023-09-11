@@ -2,8 +2,7 @@ package com.example.demo.t2;
 
 /**
  * @program: demoes
- * @description:
- * http://t.zoukankan.com/plokmju-p-linkedreverse_toutiao.html
+ * @description: http://t.zoukankan.com/plokmju-p-linkedreverse_toutiao.html
  * @author: jiangjianfei
  * @create: 2022-09-27 19:20
  **/

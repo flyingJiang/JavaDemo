@@ -9,27 +9,27 @@ import java.util.Queue;
  * @program: demoes
  * @description: 784. 字母大小写全排列
  * 给定一个字符串 s ，通过将字符串 s 中的每个字母转变大小写，我们可以获得一个新的字符串。
- *
+ * <p>
  * 返回 所有可能得到的字符串集合 。以 任意顺序 返回输出。
- *
+ * <p>
  *  
- *
+ * <p>
  * 示例 1：
- *
+ * <p>
  * 输入：s = "a1b2"
  * 输出：["a1b2", "a1B2", "A1b2", "A1B2"]
  * 示例 2:
- *
+ * <p>
  * 输入: s = "3z4"
  * 输出: ["3z4","3Z4"]
  *  
- *
+ * <p>
  * 提示:
- *
+ * <p>
  * 1 <= s.length <= 12
  * s 由小写英文字母、大写英文字母和数字组成
  * 通过次数83,384提交次数116,754
- *
+ * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode.cn/problems/letter-case-permutation
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
@@ -45,6 +45,7 @@ public class T29letterCasePermutation {
 
     /**
      * 方法一：广度优先搜索
+     *
      * @param s
      * @return
      */
@@ -72,6 +73,7 @@ public class T29letterCasePermutation {
 
     /**
      * 方法二：回溯
+     *
      * @param s
      * @return
      */
@@ -97,6 +99,7 @@ public class T29letterCasePermutation {
 
     /**
      * 方法三：二进制位图
+     *
      * @param s
      * @return
      */

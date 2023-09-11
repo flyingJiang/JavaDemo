@@ -12,12 +12,14 @@ import com.example.demo.observer.event.listener.MessageEventListener;
  **/
 public abstract class LotteryService {
     private EventManager eventManager;
-    public LotteryService(){
+
+    public LotteryService() {
         eventManager = new EventManager(EventManager.EventType.MQ, EventManager.EventType.Message);
         eventManager.subscribe(EventManager.EventType.MQ, new MQEventListener());
         eventManager.subscribe(EventManager.EventType.Message, new MessageEventListener());
     }
-    public LotteryResult draw(String uid){
+
+    public LotteryResult draw(String uid) {
         LotteryResult lotteryResult = doDraw(uid);
         eventManager.notify(EventManager.EventType.MQ, lotteryResult);
         eventManager.notify(EventManager.EventType.Message, lotteryResult);

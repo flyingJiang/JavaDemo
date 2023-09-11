@@ -29,7 +29,7 @@ public class T5 {
                 node.val + g.getOrDefault(node.left, 0) + g.getOrDefault(node.right, 0));
         g.put(node,
                 Math.max(f.getOrDefault(node.left, 0), g.getOrDefault(node.left, 0))
-                + Math.max(f.getOrDefault(node.right, 0), g.getOrDefault(node.right, 0)));
+                        + Math.max(f.getOrDefault(node.right, 0), g.getOrDefault(node.right, 0)));
     }
 
 //    作者：LeetCode-Solution

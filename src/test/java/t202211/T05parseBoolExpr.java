@@ -96,6 +96,7 @@ public class T05parseBoolExpr {
 
     /**
      * 这里主要是 ! & | 的理解，这个文字游戏，就像产品的需求，开发理解不了
+     *
      * @param stack
      * @param symbolStack
      */

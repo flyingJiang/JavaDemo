@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class T8advantageCount {
     /**
      * 870. 优势洗牌
-     *
+     * <p>
      * 给定两个大小相等的数组 nums1 和 nums2，nums1 相对于 nums2 的优势可以用满足 nums1[i] > nums2[i] 的索引 i 的数目来描述。
      * <p>
      * 返回 nums1 的任意排列，使其相对于 nums2 的优势最大化。

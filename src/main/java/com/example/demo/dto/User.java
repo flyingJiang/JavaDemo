@@ -1,6 +1,10 @@
 package com.example.demo.dto;
 
+import cn.hutool.core.date.DateTime;
 import lombok.Data;
+
+import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * @program: demoes
@@ -12,4 +16,6 @@ import lombok.Data;
 public class User {
     private String username;
     private String password;
+    private LocalDate localDate;
+    private Date date;
 }

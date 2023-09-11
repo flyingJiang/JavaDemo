@@ -123,7 +123,7 @@ public class T7maxAscendingSum {
                 int m = (i + j) / 2;
                 // 插入新
                 if (tails[m] < num) i = m + 1;
-                // 替换
+                    // 替换
                 else j = m;
             }
             tails[i] = num;

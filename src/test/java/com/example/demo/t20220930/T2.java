@@ -9,19 +9,18 @@ import java.util.Deque;
  * @program: demoes
  * @description: 主要想测试下多种数据结构
  * 包括
- *  1、数
- *  2、链表
- *  3、队列
- *  4、栈
- *  5、堆
- *  6、数组
- *
+ * 1、数
+ * 2、链表
+ * 3、队列
+ * 4、栈
+ * 5、堆
+ * 6、数组
  * @author: jiangjianfei
  * @create: 2022-09-30 20:07
  **/
 public class T2 {
     @Test
-    public void test1(){
+    public void test1() {
         Deque<String> deque = new ArrayDeque<>();
         deque.addFirst("1");
         deque.addFirst("2");

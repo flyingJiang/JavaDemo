@@ -90,13 +90,13 @@ public class T4 {
     public List<String> topKFrequent(String[] words, int k) {
         List<String> res = new ArrayList<>();
         //key为元素，value为出现频率
-        HashMap<String,Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
         for (String word : words) {
-            map.put(word,map.getOrDefault(word,0) + 1);
+            map.put(word, map.getOrDefault(word, 0) + 1);
         }
-        PriorityQueue<Map.Entry<String,Integer>> queue = new PriorityQueue<>(
+        PriorityQueue<Map.Entry<String, Integer>> queue = new PriorityQueue<>(
                 ((o1, o2) -> {
-                    if(o1.getValue() == o2.getValue()){
+                    if (o1.getValue() == o2.getValue()) {
                         return o2.getKey().compareTo(o1.getKey());
                     }
                     return o1.getValue() - o2.getValue();
@@ -105,11 +105,11 @@ public class T4 {
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
         for (Map.Entry<String, Integer> entry : entries) {
             queue.offer(entry);
-            if(queue.size() > k){
+            if (queue.size() > k) {
                 queue.poll();
             }
         }
-        for(int i = 0; i < k; i++){
+        for (int i = 0; i < k; i++) {
             res.add(queue.poll().getKey());
         }
         //   注意o2.getKey().compareTo(o1.getKey())是按字典倒序，为什么要这么做呢，是因为我们这里用到小顶堆，
