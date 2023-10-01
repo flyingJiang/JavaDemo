@@ -85,6 +85,9 @@ public class T1 {
         int[] ans = new int[arr.length];
         Arrays.fill(ans, Integer.MAX_VALUE);
 
+
+        int lower = Arrays.stream(ans).min().getAsInt();
+        int upper = Arrays.stream(ans).max().getAsInt();
         System.out.println("end");
     }
 
